@@ -84,37 +84,18 @@ nav.nav-wrap
     align-items: center
     cursor: pointer
     overflow: visible
-    //svg
-    background-image: 
-        width: 24px
-        height: auto  
-.nav-toggle-open-wrapper
-    z-index: 1000
-    background-image: url('../img/favicon.png')
-    //svg
-        //stroke: $white
-.nav-toggle-open-wrapper.nav-dark
-    //svg stroke: $primary
-    background-image: url('../img/favicon.png')
 
-.nav-toggle-close-wrapper
-    //svg stroke: $primary
-    background-image: url('../img/favicon.png')
 .toggled-nav-wrapper
-    transition: all 0.2s ease-in-out
-    display: flex
-    align-items: flex-end
-    flex-direction: column
-    position: fixed
-    top: 0
-    right: 0
-    bottom: 0
-    z-index: 1003
-    width: 300px
-    height: 100%
-    padding: 35px 20px 35px 0
-    background: $white
-    transform: translateX[300px]
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
     .internal-nav-links-wrapper, .external-nav-links-wrapper
         display: flex
         flex-direction: column
@@ -151,7 +132,7 @@ nav.nav-wrap
     background-image: url('../img/favicon.png')
 .internal-link-icon-gallery
     background-image: url('../img/favicon.png')
-.internal-link-icon-blog
+.internal-link-icon-blogs
     background-image: url('../img/favicon.png')
 .internal-link-icon-team
     background-image: url('../img/favicon.png')
@@ -166,35 +147,6 @@ nav.nav-wrap
 .external-link-icon-instagram
     background-image: url('../img/icons/instagram.svg')
 
-
-.nav-toggle-body-overlay
-    transition: opacity 0.2s ease-in-out, transform 0s ease-in-out 0.2s 
-    display: block
-    position: fixed
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    z-index: 1000
-    width: 100%
-    height: 100%
-    background: rgba(0,0 ,0 ,0.7)
-    opacity: 0
-    transform: translateX(100%)
-html.nav-open
-    body
-        overflow: hidden
-        position: fixed
-        top: 0
-        right: 0
-        bottom: 0
-        left: 0
-    .nav-toggle-body-overlay
-        transition: opacity 0.2s ease-in-out, transform 0s
-        opacity: 1
-        transform: translateX(0)
-    .toggled-nav-wrapper
-        transform: translateX(0)
 @media screen and ( min-width: 600px )
     .nav-toggle-open-wrapper, .nav-toggle-close-wrapper, .toggled-nav-wrapper, .nav-toggle-body-overlay
         display: none
