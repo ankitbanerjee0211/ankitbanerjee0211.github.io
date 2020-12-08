@@ -78,7 +78,12 @@ nav.nav-wrap
                 color: darken($white, 35%)
 //toggle sass
 
-.nav-toggle-open-wrapper, .nav-toggle-close-wrapper
+.nav-toogle-open-wrapper
+    display: none
+    @media screen and ( max-width: 600px )
+        display: flex
+
+.nav-toggle-close-wrapper
     position: relative
     height: 100px
     width: 50px
@@ -87,9 +92,6 @@ nav.nav-wrap
     align-items: center
     cursor: pointer
     overflow: visible
-.nav-toogle-open-wrapper
-    @media screen and ( max-width: 600px )
-        display:none
 
 .toggled-nav-wrapper
     height: 100%
