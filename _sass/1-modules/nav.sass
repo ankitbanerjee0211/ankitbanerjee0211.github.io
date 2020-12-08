@@ -1,15 +1,17 @@
 nav.nav-wrap
     transition: all 0.3s ease-in
-    position: absolute
+    position: fixed
+    border: 2.5px solid grey
     top: 0
     left: 0
+    background-color: white
     right: 0
+    width: 100%
     z-index: 900 //maximium. As high as we can....;P cuz we dont want it to be "overpowered"
-    max-width: 1000px
     display: flex
     justify-content: space-between
     margin: auto
-    padding: 40px
+    padding: 20px
     @media screen and ( max-width: 600px )
         padding: 35px 20px 
     //a.nav-logo
@@ -63,6 +65,7 @@ nav.nav-wrap
                 color: $white
                 transition: all 0.15s ease-in
                 font-size: 1em
+                display: block
             a:hover 
                 color: darken($white, 35% )
         li:last-of-type
@@ -84,6 +87,9 @@ nav.nav-wrap
     align-items: center
     cursor: pointer
     overflow: visible
+.nav-toogle-open-wrapper
+    @media screen and ( max-width: 600px )
+        display:none
 
 .toggled-nav-wrapper
     height: 100%
