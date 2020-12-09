@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 # TODO: Change all these infos later on.
-title: Students Automobile Club
-email: sac-kgec@gmail.com
+title: Students' Automobile Club, KGEC
+email: kgec.sac@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   SAC-KGEC is a automobile club of KGEC.
 baseurl: "/ankitbanerjee0211.github.io" # the subpath of your site, e.g. /blog
@@ -35,11 +35,12 @@ url: "https://ankitbanerjee0211.github.io/" # the base hostname & protocol for y
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-twitter_path: https://twitter.com/sac-kegc
-instagram_path: https://instagram.com/sac-kegc
-facebook_path: https://facebook.com/sac-kegc
-github_path: https://github.com/sac-kegc
-youtube_path: https://youtube.com/sac-kegc
+twitter_path: https://twitter.com/sac-kgec
+instagram_path: https://instagram.com/sac-kgec
+facebook_path: https://www.facebook.com/kgecSAC
+github_path: https://github.com/sac-kgec
+youtube_path: https://youtube.com/sac-kgec
+whatsapp_path: baseurl
 
 # Build settings
 permalink: pretty     # whenever we r going to type a url, we r not going to have the extension on the file

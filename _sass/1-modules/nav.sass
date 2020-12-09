@@ -1,17 +1,17 @@
 nav.nav-wrap
     transition: all 0.3s ease-in
     position: fixed
-    border: 2.5px solid grey
+    border: 2px solid grey
     top: 0
     left: 0
-    background-color: white
+    background-color: black
     right: 0
     width: 100%
     z-index: 900 //maximium. As high as we can....;P cuz we dont want it to be "overpowered"
     display: flex
     justify-content: space-between
     margin: auto
-    padding: 20px
+    padding: 5px
     @media screen and ( max-width: 600px )
         padding: 35px 20px 
     //a.nav-logo
@@ -28,7 +28,7 @@ nav.nav-wrap
         //for bootstrap type stuff 
     a.nav-logo
         //background: $primary  // TODO: Add image specific to that blog 
-        height: 80px
+        height: 100px
         width: 80px
         flex: 0 0 100px
         border-radius: 100%
@@ -60,28 +60,29 @@ nav.nav-wrap
             display: none
         li
             display: block 
-            padding-right: 30px
+            padding-right: 50px
             a 
-                color: $white
+                color: white
                 transition: all 0.15s ease-in
-                font-size: 1em
+                font-size: 25px
                 display: block
             a:hover 
-                color: darken($white, 35% )
+                color: red
         li:last-of-type
             padding-right: 0
     ul.navigation.nav-dark
         li
             a
-                color: $primary
+                color: white
             a:hover
-                color: darken($white, 35%)
+                color: red
 //toggle sass
 
 .nav-toogle-open-wrapper
     display: none
     @media screen and ( max-width: 600px )
         display: flex
+        color: white
 
 .nav-toggle-close-wrapper
     position: relative
