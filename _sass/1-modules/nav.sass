@@ -14,7 +14,7 @@ nav.nav-wrap
     margin: auto
     padding: 5px
     @media screen and ( max-width: 600px )
-        padding: 5px 5px
+        padding: 5px
         height: 60px
 
     //a.nav-logo
@@ -51,10 +51,12 @@ nav.nav-wrap
     a.nav-logo1
         @media screen and ( max-width: 600px)
             padding-top: 3px
-            background-size: 60px 60px
+            background-size: 70px 70px
     a.nav-logo2
-        margin-left: -25px
+        margin-left: -40px
         background-size: 80px 80px
+        @media screen and ( max-width: 600px)
+            background-size: 48px 48px
             
     //.blog-img-one
     //    background: 
@@ -85,6 +87,7 @@ nav.nav-wrap
                 display: block
             a:hover 
                 color: red
+                text-decoration: none
         li:last-of-type
             padding-right: 0
     ul.navigation.nav-dark
@@ -122,6 +125,8 @@ nav.nav-wrap
     overflow-x: hidden
     transition: 0.5s
     padding-top: 60px
+    a
+        text-decoration: none
     .internal-nav-links-wrapper, .external-nav-links-wrapper
         display: flex
         flex-direction: column
@@ -138,6 +143,7 @@ nav.nav-wrap
             flex-direction: row
             justify-content: flex-end
             align-items: center
+            text-decoration: none
     .external-nav-links-wrapper
         height: 122px
         a.external-nav-links-wrapper
