@@ -3,7 +3,7 @@
     <!--<a href="{{ site.baseurl }}/" class="nav-logo {% if page.url =='/' %}nav-dark{%endif%}"> </a>-->
         <!-- TODO: Either add a svg or ill add directly a logo-->
         <!--<a style="background-image: url('{{ site.baseurl }}/assets/img/hero-image.png');"></a>-->
-    <a href="{{ site.baseurl }}/" class="nav-logo" style="background-image: url('{{ site.baseurl }}/assets/img/favicon.png');"></a>
+    <a href="{{ site.baseurl }}/" class="nav-logo1" style="background-image: url('{{ site.baseurl }}/assets/img/favicon.png');"></a>
     <!--<a href="{{ site.baseurl }}/" class="nav-logo"></a>-->
     <ul class="navigation {% if page.url =='/' %}nav-dark{%endif%}">
         <li><a href="{{site.baseurl }}/">Home</a></li>
@@ -13,14 +13,14 @@
         <li><a href="{{site.baseurl }}/about-us">About Us</a></li>
         
     </ul>
-    <a href="https://www.kgec.edu.in/" class="nav-logo" style="background-image: url('{{ site.baseurl }}/assets/img/icons/kgec-logo.png');"></a>
+    <a href="https://www.kgec.edu.in/" class="nav-logo2" style="background-image: url('{{ site.baseurl }}/assets/img/icons/kgec-logo.png');"></a>
     <div class="nav-toogle-open-wrapper {% if page.url== '/' %}nav-dark{% endif %}">
-        <span style="font-size:30px; cursor:pointer" onclick="openNav()" color="white">&#9776;</span>
+        <span style="font-size:30px; cursor:pointer; padding-right: 20px; padding-top: 7px;" onclick="openNav()" color="white">&#9776;</span>
         <!-- a svg with burger shape -->
     </div>
     <div class="toggled-nav-wrapper" id="mySidenav">
         <div class="nav-toggle-close-wrapper">
-            <img src="{{ site.baseurl }}/assets/img/red_cross.png" width="20px" alignment="right" onclick="closeNav()">
+            <img src="{{ site.baseurl }}/assets/img/red_cross.png" width="20px" alignment="left" onclick="closeNav()">
         </div>
         <div class="internal-nav-links-wrapper">
             <a href="{{ site.baseurl }}/" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Home</h5><small>Who are we?</small></div><div class="internal-link-icon internal-link-icon-home"></div></a>
